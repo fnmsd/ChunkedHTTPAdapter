@@ -28,14 +28,13 @@ class ChunkedHTTPAdapter(HTTPAdapter):
 
 
 
-
+    _keyword_list = []
 
     def get_random_lenth(self):
         return random.randint(10, 1000)
 
     get_chunk_length = get_random_lenth
 
-    #keyword_list = []
 
     py_version = 2
 
